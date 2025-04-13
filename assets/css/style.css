@@ -1,0 +1,212 @@
+/* Reset and Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #6B48FF; /* Solid purple background */
+  color: #FFFFFF;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Particles Background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Main Content */
+main {
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo */
+.logo {
+  max-width: 80px; /* Smaller logo to fit viewport */
+}
+
+/* Heading and Slogan */
+h1.display-4 {
+  font-size: 2.5rem; /* Reduced for viewport fit */
+}
+.slogan {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+/* Lead Paragraph */
+.lead {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Progress Counter */
+.progress-counter {
+  max-width: 300px;
+}
+.progress {
+  background: #FFFFFF; /* White background */
+  border-radius: 20px;
+  height: 10px;
+}
+.progress-bar {
+  background: #A389FF;
+  border-radius: 20px;
+}
+#progress-percent {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+/* Newsletter Form */
+.newsletter {
+  max-width: 400px;
+}
+.newsletter .form-control {
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  background: transparent;
+  color: #FFFFFF;
+}
+.newsletter .form-control::placeholder {
+  color: #FFFFFF99;
+}
+.newsletter .btn-primary {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 25px;
+  min-width: 150px;
+  color: #6B48FF;
+  font-weight: 600;
+}
+.newsletter .btn-primary:hover {
+  background: #A389FF;
+  color: #FFFFFF;
+}
+
+/* Team Teaser */
+.team-teaser {
+  max-width: 300px;
+  position: relative;
+}
+.team-teaser p {
+  font-size: 0.9rem;
+}
+.team-bio {
+  display: none;
+  background: #FFFFFF;
+  color: #6B48FF;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 3;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+}
+.team-teaser:hover .team-bio {
+  display: block;
+}
+
+/* Illustration */
+.illustration {
+  max-width: 75%; /* Adjusted to fit viewport */
+}
+
+/* Social Links */
+.social-links {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 3;
+}
+.social-links a {
+  color: #6B48FF;
+  background: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+.social-links a.github-icon {
+  width: 45px;
+  height: 45px;
+}
+.social-links a:hover {
+  background: #A389FF;
+  color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+  background: #FFFFFF;
+  z-index: 2;
+}
+footer p {
+  color: #6B48FF;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #6B48FF;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  h1.display-4 {
+      font-size: 2rem;
+  }
+  .slogan {
+      font-size: 1.2rem;
+  }
+  .lead {
+      font-size: 0.9rem;
+  }
+  .progress-counter {
+      max-width: 250px;
+  }
+  .progress {
+      width: 150px;
+  }
+  .illustration {
+      max-width: 70%;
+      margin: 10px auto;
+  }
+  .newsletter {
+      max-width: 100%;
+  }
+  .newsletter form {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+  .newsletter .form-control,
+  .newsletter .btn-primary {
+      width: 100%;
+      max-width: 300px;
+  }
+  .team-teaser {
+      margin: 0 auto;
+  }
+  .social-links {
+      bottom: 50px;
+      right: 15px;
+  }
+  .social-links a {
+      width: 35px;
+      height: 35px;
+  }
+  .social-links a.github-icon {
+      width: 40px;
+      height: 40px;
+  }
+}
